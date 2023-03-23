@@ -1,0 +1,21 @@
+{
+  "name": "cypressnewdemo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "bs1": "browserstack-cypress run --sync --spec cypress/e2e/MyTests/mySpec.cy.js",
+    "bs2": "browserstack-cypress run --sync --spec cypress/e2e/MyTests/todo.cy.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "github:mysqljs/mysql",
+    "xmysql": "^0.5.1"
+  },
+  "devDependencies": {
+    "cypress": "^12.8.1"
+  }
+}
