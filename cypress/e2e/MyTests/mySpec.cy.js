@@ -38,7 +38,6 @@ describe("DB Testing", function(){
       console.log("affected rows= "+response.body.affectedRows);
       // console.log(response.status);
     });
-
   });
 
 
