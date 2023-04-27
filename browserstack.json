@@ -1,7 +1,7 @@
 {
     "auth": {
-      "username": "tejendra_UwDiBS",
-      "access_key": "7GESUXbTWHxuabxzDphV"
+      "username": "AUTOMATE_USERNAME",
+      "access_key": "AUTOMATE_ACCESSKEY"
     },
     "browsers": [{
         "browser": "chrome",
@@ -21,7 +21,6 @@
       }
     },
     "connection_settings": {
-        "local": true,
-        "local_identifier": "abc123"
+        "local": true
     }
   }
