@@ -9,12 +9,12 @@ describe("DB Testing", function(){
       },
       body: {
         // Selecting all values from Persons Table where Last Name is Kumar
-        mysqlQuery: "SELECT * FROM Demo1.Persons WHERE LastName='Kumar'",
+        postgressqlQuery: "SELECT * FROM Persons WHERE last_name='Kumar'",
       },
     }).then((response) =>{
       // Expecting Response to contain the Last Name of Kumar
-        expect(response.body.LastName == "Kumar")
-        console.log("Showing Result of the Lastname "+response.body.LastName)
+        expect(response.body.last_name == "Kumar")
+        console.log("Showing Result of the last_name "+response.body)
     });
   })
     
@@ -29,7 +29,7 @@ describe("DB Testing", function(){
       },
       body: {
         // Insert a new row into Persons Table
-        mysqlQuery: "INSERT INTO Persons (PersonID) VALUES('007')"
+        postgressqlQuery: "INSERT INTO Persons (last_name, first_name, age) VALUES ('Ansel', 'John', 24);"
       },
     })
     .then((response) =>{
@@ -47,12 +47,6 @@ describe("DB Testing", function(){
   //   });
   // });
       // cy.task("queryDb",`INSERT INTO Persons (LastName) VALUES('Agent')`)
-
-
-  
-
- 
-
 });
 
 

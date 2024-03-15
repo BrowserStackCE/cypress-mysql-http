@@ -7,12 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open",
     "bs1": "browserstack-cypress run --sync --spec cypress/e2e/MyTests/mySpec.cy.js",
-    "bs2": "browserstack-cypress run --sync --spec cypress/e2e/MyTests/todo.cy.js"
+    "local_run": "cypress run --spec cypress/e2e/MyTests/mySpec.cy.js --headed"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "mysql": "github:mysqljs/mysql",
+    "browserstack-cypress-cli": "^1.29.0",
+    "pg": "^8.11.3",
     "xmysql": "^0.5.1"
   },
   "devDependencies": {
