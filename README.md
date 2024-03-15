@@ -2,6 +2,10 @@
 ## INSTRUCTIONS
 
 - git clone https://github.com/tejozymandias/cypressmysql.git
+- cd postgressqlhttp
+> Start Http server
+- npm run dev
+> Open a new terminal
 - cd cypressmysql
 - npm install
 
